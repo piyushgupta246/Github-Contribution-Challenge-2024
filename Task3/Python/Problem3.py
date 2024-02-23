@@ -31,12 +31,17 @@ Only one valid answer exists.
 
 #Given code has time complexity of O(n2) come up with a code that has time complexity less than O(n2).
 #Do not need to change class name and method name.
+
 from typing import List
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         n = len(nums)
         for i in range(n - 1):
             for j in range(i + 1, n):
                 if nums[i] + nums[j] == target:
                     return [i, j]
         return []
+obj=Solution()
+nums = [3,2,4]
+target = 6
+print(obj.twoSum(nums,target))

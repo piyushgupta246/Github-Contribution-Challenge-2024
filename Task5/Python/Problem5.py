@@ -37,8 +37,16 @@ s1 and s2 consist of lowercase English letters.
 
 '''
 
-#Complete given code, not need to change class name and method name.
-
 class Solution:
     def isScramble(self, s1: str, s2: str) -> bool:
-        return 1
+        if len(s1) ==1 and len(s2)==1 :
+            return True
+        
+        
+obj=Solution()
+s1 = "abcde"
+s2 = "caebd"
+print(obj.isScramble(s1,s2))
+
+
+        

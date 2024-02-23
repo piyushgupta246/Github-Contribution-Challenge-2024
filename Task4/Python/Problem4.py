@@ -28,6 +28,11 @@ class Solution:
         
         result = num1 + num2
 
-        result_binary = bin(result)[2:]
+        result_binary = bin(result)
         
-        return result_binary
+        return str(result_binary)[2:]
+    
+obj=Solution()
+a = "1010"
+b = "1011"
+print(obj.addBinary(a,b))
